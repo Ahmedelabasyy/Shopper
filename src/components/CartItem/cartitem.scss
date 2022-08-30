@@ -1,0 +1,19 @@
+@import '../../common/mainColors.scss';
+
+.cart__item {
+    border-bottom: 1px solid rgba(238, 238, 238, 0.338);
+    img {
+        height: 250px;
+    }
+    .item__info {
+        .quantity__wrapper {
+            svg {
+                color: $colorWhite;
+                width: 20px;
+                height: 20px;
+                background-color: $secondColor;
+                border-radius: 50%;
+            }
+        }
+    }
+}

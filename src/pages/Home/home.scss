@@ -1,0 +1,49 @@
+@import '../../common/mainColors.scss';
+
+.home {
+    margin-top: 79px;
+    height: calc(100vh - 80px);
+
+    .left__section {
+        h2 {
+            margin-top: 7rem;
+            font-family: $outfitFont;
+            font-weight: 800;
+            font-size: 3.5rem;
+            letter-spacing: 1.2px;
+        }
+        
+        .shop__all {
+            color: $secondColor;
+            text-decoration: none;
+            position: relative;
+            padding-left: 70px;
+            margin-bottom: 100px;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 51%;
+                width: 55px;
+                height: 1px;
+                background: $secondColor;
+                
+            }
+        }
+
+        ul {
+            margin-top: 22%;
+            width: 100px;
+            li {
+                font-size: 1.2rem;
+                a {
+                    color: $mainColor;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        color: $secondColor;
+                    }
+                }
+            }
+        }
+    }
+}

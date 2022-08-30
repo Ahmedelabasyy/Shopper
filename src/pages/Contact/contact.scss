@@ -1,0 +1,65 @@
+@import '../../common/mainColors.scss';
+
+.contact {
+    margin-top: 80px;
+    min-height: calc(100vh - 100px);
+    .contact__top {
+        h6 {
+            font-weight: normal;
+            color: $mainColor;
+        }
+        h3 {
+            font-weight: bold;
+            color: $secondColor
+        }
+    }
+    .direct__me {
+        color: $colorWhite;
+        background-color: $secondColor;
+        border: 1px solid $secondColor;
+        width: 320px;
+        transition: all .4s ease-in-out;
+        margin-bottom: 15px;
+        margin-left: 50px;
+        h5 {
+            font-weight: bold;
+        }
+
+        h6 {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        a {
+            color: #ffcb9e;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    form {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        input, textarea {
+            width: 100%;
+            padding: 10px 15px;
+            background: none;
+            border: none;
+            border-radius: 5px;
+            border: 2px solid $secondColor;
+            color: $colorWhite;
+            caret-color: $secondColor;
+            &:focus {
+                outline: none;
+            }
+        }
+        button {
+            width: 250px
+        }
+    }
+}

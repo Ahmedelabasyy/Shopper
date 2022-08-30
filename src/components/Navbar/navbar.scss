@@ -1,0 +1,62 @@
+@import '../../common/mainColors.scss';
+nav {
+    border-bottom: 1px solid #27292D;
+    background-color: $bgColor;
+    .navbar-brand {
+        color: $mainColor;
+        font-weight: bold;
+        font-size: 1.5rem;
+        &:hover {
+            color: $mainColor;
+        }
+        &:focus {
+            color: $mainColor;
+        }
+    }
+    .navbar-nav {
+        a {
+            width: 100px;
+            color: $mainColor;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 1.04rem;
+            transition: all .2s ease ;
+            font-weight: bold;
+            &.active,
+            &:hover {
+                color: $colorWhite;
+            }
+            
+        }
+    }
+    .login {
+        a {
+            color: $mainColor;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 1.4rem;
+            transition: all .2s ease ;
+            font-weight: bold;
+            &.active,
+            &:hover {
+                color: $colorWhite;
+            }
+        }
+        .items__number {
+            position: relative;
+            span {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                font-size: 10px;
+                background: $secondColor;
+                right: -10px;
+                top: -6px;
+            }
+        }
+    }
+}

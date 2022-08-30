@@ -1,0 +1,39 @@
+@import '../../common/mainColors.scss';
+
+.about {
+    margin-top: 80px;
+
+    .about__heading {
+        position: relative;
+        width: fit-content;
+        letter-spacing: 1.2px;
+        margin: auto;
+        margin-bottom: 7rem;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 24%;
+            bottom: -10px;
+            height: 2px;
+            width: 80px;
+            background: $secondColor;
+        }
+    }
+
+    .about__section {
+        margin-bottom: 150px;
+    }
+
+    .all {
+        background-image: url("../../../public/assets/bg.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 350px;
+        margin-bottom: 4rem;
+        p {
+            font-size: 1.9rem;
+        }
+    }
+    
+}

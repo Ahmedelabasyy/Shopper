@@ -1,0 +1,26 @@
+@import '../../common/mainColors.scss';
+
+footer {
+    background: #111;
+    .footer__heading {
+        color: $secondColor;
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-decoration: none;
+        
+    }
+    
+    ul {
+        width: 100px;
+        li {
+            font-size: 1.2rem;
+            a {
+                color: $mainColor;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: $secondColor;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import '../common/mainColors.scss';
+
+.title {  
+    margin-bottom: 20px;  
+    padding:20px  
+}  
+
+.img {  
+    height: 520px;width:100%  
+}  
+
+.owl-dots {
+    display: none;
+}
+
+.owl-nav {
+    margin-top: 2rem;
+    position: absolute;
+    right: 0;
+    button {
+        span{
+            width: 40px;
+            height: 40px;
+            line-height: 30px;
+            border-radius: 50%;
+            font-size: 30px;
+            border: 1px solid $mainColor;
+            display: block;
+            color: $secondColor ;
+            border: 1px solid $secondColor ;
+        
+        }
+        &:hover {
+            background: none !important;
+        }
+    }
+    
+}
+

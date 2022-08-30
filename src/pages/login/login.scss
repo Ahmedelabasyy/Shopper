@@ -1,0 +1,44 @@
+@import '../../common/mainColors.scss';
+
+.login__sign {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        box-shadow: 3px 3px 2px #b98c633d;
+        background-color: #111;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-radius: 10px;
+
+        .form__left {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            
+            input {
+                width: 100%;
+                background: none;
+                border: none;
+                border-radius: 5px;
+                border-bottom: 1px solid $secondColor;
+                padding: 10px 15px;
+                caret-color: $secondColor;
+                color: $colorWhite;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .form__right {
+            flex-basis:400px;
+        }
+    }
+}

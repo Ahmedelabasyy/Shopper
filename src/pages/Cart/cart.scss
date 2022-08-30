@@ -1,0 +1,9 @@
+@import '../../common/mainColors.scss';
+
+.cart {
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
+    .cart__head {
+        border-bottom: 1px solid #DDD;
+    }
+}
